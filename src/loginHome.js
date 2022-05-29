@@ -12,7 +12,8 @@ const LoginHome = () => {
       <br />
       <br />
       <Link to="/products">Products</Link><br />
-      <Link to="contact">Contact</Link><br />
+      <Link to="/contact">Contact</Link><br />
+      <Link to="/tablesend">TableSend</Link><br />
       <button onClick={logout}>Logout</button>
     </div>
   );

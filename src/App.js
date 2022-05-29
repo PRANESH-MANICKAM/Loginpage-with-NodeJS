@@ -1,4 +1,3 @@
-import "./App.css";
 import Home from "./home.js";
 import Login from "./login";
 import Register from "./register";
@@ -7,6 +6,8 @@ import { Switch, Route } from "react-router-dom";
 import PrivateRoute from "./privateRoute";
 import Product from "./product";
 import Contact from "./contact";
+import TableSend from "./tableSend";
+import TableShow from "./tableShow";
 
 function App() {
   return (
@@ -33,6 +34,18 @@ function App() {
           path="/contact"
           name="contact"
           component={(props) => <Contact {...props} />}
+        />
+        <PrivateRoute
+          exact
+          path="/tablesend"
+          name="tablesend"
+          component={(props) => <TableSend {...props} />}
+        />
+        <PrivateRoute
+          exact
+          path="/tableshow"
+          name="tableshow"
+          component={(props) => <TableShow {...props} />}
         />
       </Switch>
     </>

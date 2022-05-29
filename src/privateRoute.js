@@ -26,6 +26,16 @@ const PrivateRoute = ({component: Component}) => {
                 pathname: "/contact",
               }}
             />
+             <Redirect
+              to={{
+                pathname: "/tablesend",
+              }}
+            />
+            <Redirect
+              to={{
+                pathname: "/tableshow",
+              }}
+            />
             </>
           )
         }

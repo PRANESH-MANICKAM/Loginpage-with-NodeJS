@@ -21,7 +21,7 @@ const Login = () => {
         localStorage.setItem("userToken", userlogin.data.token);
         alert("Logged in successfully");
         history.push("/loginhome");
-        setTimeout(()=>{localStorage.clear()},30000)
+        setTimeout(()=>{localStorage.clear()},86400000)
       }
     } catch (error) {
       console.log("error in login api call ==>", error);
